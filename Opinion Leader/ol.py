@@ -9,7 +9,7 @@ import random
 import time
 import json
 
-myclient = pymongo.MongoClient("10.69.24.137", 27017)
+myclient = pymongo.MongoClient(IP, port)
 mydb = myclient["weibo"]
 weibo_collection = mydb["weibo_topic"]
 rt_collection = mydb["weibo_reposts"]
