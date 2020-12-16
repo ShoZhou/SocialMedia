@@ -14,7 +14,7 @@ from comment_spider import patch_spider_comment
 from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import as_completed
 
-myclient = pymongo.MongoClient("10.69.24.137", 27017)
+myclient = pymongo.MongoClient(IP, port)
 mydb = myclient["weibo"]
 test_collection = mydb["weibo_topic"]
 
